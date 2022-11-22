@@ -14,7 +14,18 @@ public interface IBuyerService {
      */
     Buyer getById(Long id);
 
+    /**
+     * Método responsável por retornar todos os compradores cadastrados na plataforma.
+     * @author Amanda Zotelli
+     * @return Retorna uma Lista da entidade do tipo Buyer.
+     */
     List<Buyer> getAll();
 
+    /**
+     * Método responsável por retornar uma Lista com as compras de um comprador, conforme Id informado.
+     * @author Amanda Zotelli
+     * @param id - Long
+     * @return Retorna uma Lista da entidade do tipo ShoppingCart.
+     */
     List<ShoppingCart> getAllBuyerShoppingCart(Long buyerId);
 }

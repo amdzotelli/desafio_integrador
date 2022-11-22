@@ -31,11 +31,22 @@ public class BuyerService implements IBuyerService {
         return repository.findById(id).orElseThrow(() -> new NotFoundException("Buyer not found!"));
     }
 
+    /**
+     * Método responsável por retornar todos os compradores cadastrados na plataforma.
+     * @author Amanda Zotelli
+     * @return Retorna uma Lista da entidade do tipo Buyer.
+     */
     @Override
     public List<Buyer> getAll() {
         return repository.findAll();
     }
 
+    /**
+     * Método responsável por retornar uma Lista com as compras de um comprador, conforme Id informado.
+     * @author Amanda Zotelli
+     * @param id - Long
+     * @return Retorna uma Lista da entidade do tipo ShoppingCart. Se não houverem compras, retorna um status 204 No Content.
+     */
     @Override
     public List<ShoppingCart> getAllBuyerShoppingCart(Long buyerId) {
         return cartRepository.findShoppingCartsByBuyer_BuyerId(buyerId);
