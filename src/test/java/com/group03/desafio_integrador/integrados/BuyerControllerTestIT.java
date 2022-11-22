@@ -78,13 +78,13 @@ class BuyerControllerTestIT {
 
     @Test
     void getById_returnBuyerProfile_whenIdIsValid() throws Exception {
-        Integer buyerId = Math.toIntExact(TestsMocks.mockBuyer().getBuyerId());
+      Integer buyerId = Math.toIntExact(TestsMocks.mockBuyer().getBuyerId());
 
         ResultActions response = mockMvc.perform(get("/api/v6/buyers/profile/1")
                 .contentType(MediaType.APPLICATION_JSON));
 
-        response.andExpect(status().isOk());
-               // .andExpect(jsonPath("$.batchId", CoreMatchers.is(batchId)));
+        response.andExpect(status().isOk())
+               .andExpect(jsonPath("$.buyerId", CoreMatchers.is(buyerId)));
     }
 
     @Test
@@ -93,29 +93,29 @@ class BuyerControllerTestIT {
                 get("/api/v6/buyers/profile/800")
                         .contentType(MediaType.APPLICATION_JSON));
 
-        response.andExpect(status().isNotFound());
-        //        .andExpect(jsonPath("$.message", CoreMatchers.is("This category is not valid")));
+        response.andExpect(status().isNotFound())
+                  .andExpect(jsonPath("$.message", CoreMatchers.is("Buyer not found!")));
     }
 
-    @Test
-    void getCartProducts_returnCartProduct_whenShoppingCartExist() throws Exception {
-        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
+//    @Test
+//    void getCartProducts_returnCartProduct_whenShoppingCartExist() throws Exception {
+//        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
+//
+//        ResultActions response = mockMvc.perform(
+//                get("/api/v1/fresh-products/orders/1")
+//                        .contentType(MediaType.APPLICATION_JSON));
+//
+//        response.andExpect(status().isOk());
+//    }
 
-        ResultActions response = mockMvc.perform(
-                get("/api/v1/fresh-products/orders/1")
-                        .contentType(MediaType.APPLICATION_JSON));
-
-        response.andExpect(status().isOk());
-    }
-
-    @Test
-    void getCartProducts_returnStatusNoContent_whenShoppingCartDoesNotExist() throws Exception {
-        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
-
-        ResultActions response = mockMvc.perform(
-                get("/api/v1/fresh-products/orders/1")
-                        .contentType(MediaType.APPLICATION_JSON));
-
-        response.andExpect(status().isOk());
-    }
+//    @Test
+//    void getCartProducts_returnStatusNoContent_whenShoppingCartDoesNotExist() throws Exception {
+//        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
+//
+//        ResultActions response = mockMvc.perform(
+//                get("/api/v1/fresh-products/orders/1")
+//                        .contentType(MediaType.APPLICATION_JSON));
+//
+//        response.andExpect(status().isOk());
+//    }
 }
