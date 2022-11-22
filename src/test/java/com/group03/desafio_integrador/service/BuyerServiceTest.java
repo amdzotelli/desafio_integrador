@@ -38,12 +38,11 @@ class BuyerServiceTest {
     }
 
     @Test
-    void getById_returnSuccess_whenBatchExists() {
+    void getById_returnSuccess_whenBuyerExists() {
         BDDMockito.when(buyerRepository.findById(ArgumentMatchers.any(Long.class))).thenReturn(Optional.ofNullable(mockBuyer));
 
         Buyer buyerById = buyerService.getById(1L);
 
-        assertThat(buyerById).isNotNull();
-        assertThat(buyerById).isEqualTo(mockBuyer);
+        assertThat(buyerById).isNotNull().isEqualTo(mockBuyer);
     }
 }

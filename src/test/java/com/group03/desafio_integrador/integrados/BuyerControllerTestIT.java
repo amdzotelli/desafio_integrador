@@ -2,11 +2,8 @@ package com.group03.desafio_integrador.integrados;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.group03.desafio_integrador.dto.BatchStockDTO;
 import com.group03.desafio_integrador.entities.*;
-import com.group03.desafio_integrador.entities.entities_enum.CategoryEnum;
 import com.group03.desafio_integrador.repository.BuyerRepository;
-import com.group03.desafio_integrador.repository.InboundOrderRepository;
 import com.group03.desafio_integrador.repository.ShoppingCartRepository;
 import com.group03.desafio_integrador.utils.mocks.TestsMocks;
 import lombok.extern.log4j.Log4j2;
@@ -21,15 +18,10 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
@@ -50,14 +42,8 @@ class BuyerControllerTestIT {
     @Autowired
     private ObjectMapper objectMapper;
 
-    private Batch mockBatch;
-
     @BeforeEach
     void setUp() {
-
-        Batch mockBatchList = TestsMocks.createBatch();
-        mockBatch = TestsMocks.mockBatch();
-
     }
 
     @AfterEach
@@ -97,25 +83,37 @@ class BuyerControllerTestIT {
                   .andExpect(jsonPath("$.message", CoreMatchers.is("Buyer not found!")));
     }
 
-//    @Test
-//    void getCartProducts_returnCartProduct_whenShoppingCartExist() throws Exception {
-//        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
+    @Test
+    void getBuyerCart_returnShoppingCartList_whenShoppingCartExist() throws Exception {
+//        Long buyerId = TestsMocks.mockBuyer().getBuyerId();
 //
-//        ResultActions response = mockMvc.perform(
-//                get("/api/v1/fresh-products/orders/1")
-//                        .contentType(MediaType.APPLICATION_JSON));
-//
-//        response.andExpect(status().isOk());
-//    }
+//        cartRepository.findShoppingCartsByBuyer_BuyerId(buyerId);
 
-//    @Test
-//    void getCartProducts_returnStatusNoContent_whenShoppingCartDoesNotExist() throws Exception {
-//        List<CartProduct> shoppingCart = cartProductRepository.findAllByShoppingCart(shoppingCartId);
-//
-//        ResultActions response = mockMvc.perform(
-//                get("/api/v1/fresh-products/orders/1")
-//                        .contentType(MediaType.APPLICATION_JSON));
-//
-//        response.andExpect(status().isOk());
-//    }
+        ResultActions response = mockMvc.perform(
+                get("/api/v6/buyers/orders/list?buyerId=1")
+                        .contentType(MediaType.APPLICATION_JSON));
+
+        response.andExpect(status().isOk());
+    }
+
+    @Test
+    void getBuyerCart_returnStatusNoContent_whenShoppingCartDoesNotExist() throws Exception {
+
+        ResultActions response = mockMvc.perform(
+                get("/api/v6/buyers/orders/list?buyerId=140")
+                        .contentType(MediaType.APPLICATION_JSON));
+
+        response.andExpect(status().isNoContent());
+    }
+
+    @Test
+    void getBuyerCart_throwsBuyerNotFound_whenBuyerDoesNotExist() throws Exception {
+
+        ResultActions response = mockMvc.perform(
+                get("/api/v6/buyers/orders/list?buyerId=200")
+                        .contentType(MediaType.APPLICATION_JSON));
+
+        response.andExpect(status().isNotFound());
+    }
+
 }
