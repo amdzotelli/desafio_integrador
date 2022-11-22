@@ -2,6 +2,8 @@ package com.group03.desafio_integrador.service.interfaces;
 
 import com.group03.desafio_integrador.entities.Buyer;
 
+import java.util.List;
+
 public interface IBuyerService {
     /**
      * Método responsável por retornar o comprador conforme Id informado.
@@ -10,4 +12,7 @@ public interface IBuyerService {
      * @return Retorna uma entidade do tipo Buyer.
      */
     Buyer getById(Long id);
+
+    List<Buyer> getAll();
+
 }
