@@ -2,7 +2,9 @@ package com.group03.desafio_integrador.service;
 
 import com.group03.desafio_integrador.advisor.exceptions.NotFoundException;
 import com.group03.desafio_integrador.entities.Buyer;
+import com.group03.desafio_integrador.entities.ShoppingCart;
 import com.group03.desafio_integrador.repository.BuyerRepository;
+import com.group03.desafio_integrador.repository.ShoppingCartRepository;
 import com.group03.desafio_integrador.service.interfaces.IBuyerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,6 +16,8 @@ import java.util.List;
 public class BuyerService implements IBuyerService {
 
     private final BuyerRepository repository;
+
+    private final ShoppingCartRepository cartRepository;
 
     /**
      * Método responsável por retornar o comprador conforme Id informado.
@@ -30,6 +34,11 @@ public class BuyerService implements IBuyerService {
     @Override
     public List<Buyer> getAll() {
         return repository.findAll();
+    }
+
+    @Override
+    public List<ShoppingCart> getAllBuyerShoppingCart(Long buyerId) {
+        return cartRepository.findShoppingCartsByBuyer_BuyerId(buyerId);
     }
 
 }
