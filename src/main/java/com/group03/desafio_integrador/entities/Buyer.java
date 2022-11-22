@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -27,5 +28,17 @@ public class Buyer {
     @NotBlank
     @Email
     private String email;
+
+    private String cpf;
+
+    private String city;
+
+    private String state;
+
+    private String cep;
+
+    private LocalDate birthDate;
+
+    private String gender;
 
 }
