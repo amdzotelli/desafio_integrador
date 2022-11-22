@@ -7,6 +7,8 @@ import com.group03.desafio_integrador.service.interfaces.IBuyerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class BuyerService implements IBuyerService {
@@ -23,6 +25,11 @@ public class BuyerService implements IBuyerService {
     @Override
     public Buyer getById(Long id) {
         return repository.findById(id).orElseThrow(() -> new NotFoundException("Buyer not found!"));
+    }
+
+    @Override
+    public List<Buyer> getAll() {
+        return repository.findAll();
     }
 
 }
