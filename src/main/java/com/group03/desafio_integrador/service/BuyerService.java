@@ -46,9 +46,12 @@ public class BuyerService implements IBuyerService {
      * @author Amanda Zotelli
      * @param id - Long
      * @return Retorna uma Lista da entidade do tipo ShoppingCart. Se não houverem compras, retorna um status 204 No Content.
+     * @throws NotFoundException - NotFoundException
      */
+
     @Override
     public List<ShoppingCart> getAllBuyerShoppingCart(Long buyerId) {
+        getById(buyerId);
         return cartRepository.findShoppingCartsByBuyer_BuyerId(buyerId);
     }
 
