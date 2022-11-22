@@ -234,8 +234,14 @@ public class TestsMocks {
     public static Buyer mockBuyer() {
         return new Buyer(
                 1L,
-                "Buyer 1",
-                "buyer@email.com"
+                "Ria Rojas",
+                "riarojas@yahoo.com",
+                "83325684273",
+                "Porto Alegre",
+                "Rio Grande do Sul",
+                "98664-736",
+                LocalDate.parse("1968-02-14"),
+                "Genderfluid"
         );
     }
 
