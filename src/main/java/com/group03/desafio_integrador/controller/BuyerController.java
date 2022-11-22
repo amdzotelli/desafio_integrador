@@ -28,9 +28,15 @@ public class BuyerController {
         return new ResponseEntity<>(service.getById(buyerId), HttpStatus.OK);
     }
 
-    @GetMapping(value="/orders/list", params={"buyerId"})
+    @GetMapping(value = "/orders/list", params = {"buyerId"})
     public ResponseEntity<List<ShoppingCart>> getAllShoppingCart(@RequestParam("buyerId") Long buyerId) {
-        return new ResponseEntity<>(service.getAllBuyerShoppingCart(buyerId), HttpStatus.OK);
+        List<ShoppingCart> cart = service.getAllBuyerShoppingCart(buyerId);
+        if (cart.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(cart, HttpStatus.OK);
+        }
     }
 
 }
+
