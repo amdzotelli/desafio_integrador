@@ -164,7 +164,7 @@ The tool chosen to document the API was Postman and JavaDoc for the project.
 
 ◽ Go to Postman's documentation with the routes from the Individual requirement [here](https://documenter.getpostman.com/view/23644142/2s8YsnWw4T).
 
-◽ Reports and Graphs...
+◽ Graphics and DER [here](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images)
 
 <br>
 
@@ -365,7 +365,7 @@ Integrador, sem que o problema a ser resolvido fosse especificado pelo Product O
 
 <br>
 
-:white_medium_small_square: Relatórios e Gráficos...
+:white_medium_small_square: Gráficos e DER [aqui](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images)
 
 <br>
 
