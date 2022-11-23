@@ -308,11 +308,40 @@ A ferramenta escolhida para documentar a API foi o Postman e JavaDoc para o proj
 
 <br>
 
-## Documentação Individual
+## Documentação Individual 
 
-### Requisito 6
-#### Amanda Zotelli
-:warning: Acesse a Individual do Postman [aqui]().
+### :small_red_triangle: Requisito 6, Amanda Zotelli :small_red_triangle:
+
+- A instrução para esse requisito (individual e obrigatório) consistiu em criar/adicionar uma nova User Story ao Projeto
+Integrador, sem que o problema a ser resolvido fosse especificado pelo Product Owner (PO).
+
+- Como alternativa para explorar as diferentes alternativas no universo da proposta do projeto, quis tentar fazer algo fora da minha zona de conforto, aproveitando para praticar novos conhecimentos adquiridos no Bootcamp de Java, que foi __utilizar o ElasticSearch e Kibana para gerar Gráficos com os dados dos compradores da plataforma__. 
+
+- Um dos importantes fatores lidando com dados nos tempos atuais, é poder utilizá-los para conhecer melhor o seu público e proporcionar as melhores experiências, e se possível, de forma sustentável para o negócio. 
+
+- Com esses pontos em mente, a minha proposta foi de alimentar o banco de dados, a tabela de Compradores (Buyers), de modo a ficar o mais realista possível, e ver quais insights são possíveis de se ter analisando os dados, o que na prática posteriormente poderia ser utilizado para agregar valor para o usuário e aumentar o valor percebido da plataforma.
+
+- As rotas implementadas nesse requisito foram com o método GET, para resgatar diferentes informações da Entidade Comprador:
+
+  - `/api/v6/buyers`: responsável por trazer todos os compradores registrados na plataforma.
+  
+  - `/api/v6/buyers/profile/querytype=[buyerId]`: responsável por trazer o perfil de um comprador. Caso não exista, retorna um Erro 404 Not Found.
+  
+  - `/api/v6/buyers/orders/list?querytype=[buyerId]`: responsável por trazer todas as compras de um comprador. Caso o comprador não exista, retorna um Erro 404 Not Found. Caso não existam compras, retorna um Status 204 No Content.
+  
+- Foram feitos os testes de integração envolvendo a Entidade Comprador (Buyer), os métodos de Service e Controller apontam cobertura de 100%. 
+  
+<br>
+
+:white_medium_small_square: Após clonar e rodar o projeto (de acordo com o passo a passo aqui embaixo :arrow_down:), acesse `http://localhost:8080/swagger-ui.html#/` para visualizar a documentação do Swagger.
+
+<br>
+
+:white_medium_small_square: Acesse a Documentação Individual do Postman [aqui]().
+
+<br>
+
+:white_medium_small_square: Relatórios e Gráficos...
 
 <br>
 
@@ -328,6 +357,7 @@ Abrir o terminal e digitar as informações na sequência:
 - Gerar a documentação do JavaDocs:
     - Na barra superior da IDE IntelliJ, selecionar a aba `Tools`;
     - Em seguida, selecionar `generate JavaDoc`;
+    
 
 <br>
 
