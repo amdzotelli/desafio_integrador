@@ -136,12 +136,35 @@ The tool chosen to document the API was Postman and JavaDoc for the project.
 
 <br> 
 
+## Individual Documentation
 
-## Individual Documentation 
+### :small_red_triangle: Requiriment 6, Amanda Zotelli :small_red_triangle:
 
-### Requirement 6
-#### Amanda Zotelli
-:warning: Go to Postman's Individual [here]().
+- The instruction for this requirement (individual and mandatory) was to create/add a new User Story to the Integrator Project, without the problem to be solved being specified by the Product Owner (PO).
+
+- As an alternative to explore the different alternatives in the universe of the project proposal, I wanted to try to do something out of my comfort zone, taking the opportunity to practice new knowledge acquired in the Java Bootcamp, which was to __use ElasticSearch and Kibana to generate Charts with the data of the platform's buyers.__
+
+- One of the important factors dealing with data these days, is to be able to use it to know your audience better and provide the best experiences, and if possible, in a sustainable way for the business.
+
+- With these points in mind, my proposal was to feed the database, the Buyers table, in order to be as realistic as possible, and see what insights are possible to have by analyzing the data, which in practice could later be used to add value to the user and increase the perceived value of the platform.
+
+- The routes implemented in this requirement were with the GET method, to retrieve different information from the Buyer Entity:
+
+  - `/api/v6/buyers:` responsible for fetching all the buyers registered in the platform.
+
+  - `/api/v6/buyers/profile/querytype=[buyerId]`: responsible for retrieving a buyer's profile. If it does not exist, it returns a 404 Not Found error.
+
+  - `/api/v6/buyers/orders/list?querytype=[buyerId]`: responsible for retrieving all the purchases of a buyer. If the buyer does not exist, it returns a 404 Not Found Error. If there are no purchases, it returns a 204 No Content status.
+
+- The integration tests involving the Buyer Entity were done, the Service and Controller methods show 100% coverage.
+
+<br>
+
+◽ After cloning and running the project (according to the step-by-step below ⬇️), go to http://localhost:8080/swagger-ui.html#/ to view the Swagger documentation.
+
+◽ Go to Postman's Individual [here]().
+
+◽ Reports and Graphs...
 
 <br>
 
@@ -157,6 +180,7 @@ Open the terminal and type the information in the sequence:
 - Generate JavaDocs documentation:
   - On the top bar of the IntelliJ IDE, select the `Tools` tab;
   - Then select `generate JavaDoc`;
+
 
 Translated with www.DeepL.com/Translator (free version)
 
