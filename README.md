@@ -132,7 +132,7 @@ The layers were tested, with at least 80% coverage of methods and lines, checkin
 ## Team Documentation 
 The tool chosen to document the API was Postman and JavaDoc for the project.
 
-:warning: Access the Postman documentation [here](https://documenter.getpostman.com/view/23627905/2s8YmUKzJM).
+:warning: Access the Postman documentation [here](https://documenter.getpostman.com/view/23644142/2s8YsnYGXZ).
 
 <br> 
 
@@ -328,7 +328,7 @@ As camadas foram testadas, com cobertura de miníma de 80% de métodos e linhas,
 ## Documentação da API
 A ferramenta escolhida para documentar a API foi o Postman e JavaDoc para o projeto.
 
-:warning: Acesse a documentação do Postman [aqui](https://documenter.getpostman.com/view/23627905/2s8YmUKzJM).
+:warning: Acesse a documentação do Postman [aqui](https://documenter.getpostman.com/view/23644142/2s8YsnYGXZ).
 
 <br>
 
