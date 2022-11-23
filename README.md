@@ -18,7 +18,7 @@
 - [Validations](#validations)
 - [Testing](#testing)
 - [Team Documentation](#team-documentation)
-- [Individual Documentation](#individual-documentation)
+- [**Individual Documentation**](#individual-documentation)
 - [How to access the project](#how-to-access-the-project)
 - [Authors](#authors)
 - [Portuguese Version](#portuguese-version)
@@ -160,11 +160,11 @@ The tool chosen to document the API was Postman and JavaDoc for the project.
 
 <br>
 
-◽ After cloning and running the project (according to the step-by-step below ⬇️), go to http://localhost:8080/swagger-ui.html#/ to view the Swagger documentation.
+:small_red_triangle: After cloning and running the project (according to the step-by-step below ⬇️), go to http://localhost:8080/swagger-ui.html#/ to view the Swagger documentation. 
 
-◽ Go to Postman's documentation with the routes from the Individual requirement [here](https://documenter.getpostman.com/view/23644142/2s8YsnWw4T).
+:small_red_triangle: Go to Postman's documentation with the routes from the Individual requirement [here](https://documenter.getpostman.com/view/23644142/2s8YsnWw4T). 
 
-◽ Graphics and DER [here](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images)
+:small_red_triangle: Graphics and DER [here](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images). User Story & SQL Script are in _resources_.
 
 <br>
 
@@ -214,7 +214,7 @@ Translated with www.DeepL.com/Translator (free version)
 - [Validações](#validações)
 - [Testes](#testes)
 - [Documentação da API](#documentação-da-api)
-- [Documentação Individual](#documentação-individual)
+- [**Documentação Individual**](#documentação-individual)
 - [Como acessar o projeto](#como-acessar-o-projeto)
 - [Autores](#autores)
 
@@ -357,15 +357,15 @@ Integrador, sem que o problema a ser resolvido fosse especificado pelo Product O
   
 <br>
 
-:white_medium_small_square: Após clonar e rodar o projeto (de acordo com o passo a passo aqui embaixo :arrow_down:), acesse `http://localhost:8080/swagger-ui.html#/` para visualizar a documentação do Swagger.
+:small_red_triangle: Após clonar e rodar o projeto (de acordo com o passo a passo aqui embaixo :arrow_down:), acesse `http://localhost:8080/swagger-ui.html#/` para visualizar a documentação do Swagger.
 
 <br>
 
-:white_medium_small_square: Acesse a Documentação com as rotas do requisito Individual do Postman [aqui](https://documenter.getpostman.com/view/23644142/2s8YsnWw4T).
+:small_red_triangle: Acesse a Documentação com as rotas do requisito Individual do Postman [aqui](https://documenter.getpostman.com/view/23644142/2s8YsnWw4T).
 
 <br>
 
-:white_medium_small_square: Gráficos e DER [aqui](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images)
+:small_red_triangle: Gráficos e DER [aqui](https://github.com/amdzotelli/desafio_integrador/tree/feature/amanda/ml-get-buyer-data/src/main/resources/images). User Story & Script SQL estão em _resources_.
 
 <br>
 
