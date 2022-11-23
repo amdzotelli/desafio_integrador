@@ -1,18 +1,41 @@
-# :ballot_box_with_check: Final Bootcamp Challenge
-
 <p align="right">
   <img src="https://img.shields.io/badge/Project completed-black?style=for-the-badge" alt="badge complete project">
 </p>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Version: English-black?style=for-the-badge" alt="badge version english">
-</p>
+# :ballot_box_with_check: Final Bootcamp Challenge
 
-## Integrator Challenge API
+<br>
+
+----------
+
+<br>
+
+## Table of contents
+
+- [About the API](#about-the-api)
+- [Skills](#skills)
+- [What was developed](#what-was-developed)
+- [Validations](#validations)
+- [Testing](#testing)
+- [Team Documentation](#team-documentation)
+- [Individual Documentation](#individual-documentation)
+- [How to access the project](#how-to-access-the-project)
+- [Authors](#authors)
+- [Portuguese Version](#portuguese-version)
+
+<br>
+
+-----------
+
+<br>
+
+## About the API
 Development of a REST API for a Marketplace that already sells food products, but wants to be able to sell products that need refrigeration; called fresh products. It implies new challenges in how to store
 transport and market the products, since it is done in a totally different way.
 
-The API was developed to:
+<details>
+  <summary>The API was developed to:</summary>
+
 
 - Be able to enter a batch of products in the distribution warehouse to record that existence in the stock.
 
@@ -24,15 +47,19 @@ The API was developed to:
 
 - To be able to register the purchase order so that the collaborators within Fullfilment
   can assemble the order(s) to ship them.
+</details>
+
+<br>
 
 
-
-### Skills
+## Skills
 
 Implement a REST API within the framework of the slogan and apply the content worked on during BOOTCAMP MELI (Git, Java, Spring, Testing, Database,
 Quality and Security), which can be used from a proposal, requirements specification and attached documentation.
 
-MSC
+<details>
+  <summary>MSC Architecture</summary>
+
 - Structure the API according to good practices following the MSC architecture and some SOLID principles:
   - Entities: Responsible for modeling the entities.
   - Repository: This is the communication layer with the database.
@@ -40,8 +67,12 @@ MSC
   - Controller: Responsible for receiving the requests and sending the answers.
   - Advisor: Responsible for managing the application's exceptions.
   - DTO: Responsible for transporting data between different components of a system.
+ 
+  </details>
 
-Technologies
+<details>
+  <summary>Technologies and Libraries</summary>
+
 - The challenge was performed using Java 11 with Spring Boot, its validation annotations adding dependencies:
   - Spring Boot DevTools.
   - Spring Boot Web.
@@ -49,9 +80,11 @@ Technologies
   - Lombok.
   - JUnit.
   - Mockito.
+  </details>
 
+<br>
 
-### What was developed
+## What was developed
 The routes implemented to contemplate these issues were:
 
 - User stories are told from the **warehouse representative's** point of view based on their needs. Services are exposed from the **warehouse fullfilment**.
@@ -70,7 +103,9 @@ The routes implemented to contemplate these issues were:
 
 The routes used were designed to make the application more dynamic and functional for the target audience.
 
-### Validations
+<br>
+
+## Validations
 
 Among Spring Boot's __validation__ annotations, which were used in the `Entities` layer of each entity, are:
 
@@ -84,45 +119,31 @@ Among Spring Boot's __validation__ annotations, which were used in the `Entities
 
 - __Email__, to determine if the email format is valid;
 
+<br>
 
-### Testing
+## Testing
 
 Unit and integration testing was done using JUnit for the assertions and Mockito to do the Mocks.
 
 The layers were tested, with at least 80% coverage of methods and lines, checking the consistency of the methods used for the development of the project.
 
+<br>
 
-### API Documentation
+## Team Documentation 
 The tool chosen to document the API was Postman and JavaDoc for the project.
 
 :warning: Access the Postman documentation [here](https://documenter.getpostman.com/view/23627905/2s8YmUKzJM).
 
+<br> 
+
+
+## Individual Documentation 
+
 ### Requirement 6
-
 #### Amanda Zotelli
-Enter the individual information
 :warning: Go to Postman's Individual [here]().
 
-#### Carolina Hakamada
-Enter your individual information
-:warning: Go to Postman's Private [here]().
-
-#### Gabriel Morais
-Enter your individual information
-:warning: Go to Postman's Private [here]().
-
-#### Ingrid Paulino
-Enter your individual information
-:warning: Go to Postman's Private [here]().
-
-#### Mariana Saraiva
-Enter your individual info
-:warning: Go to Postman's Private [here]().
-
-#### Rosália Padoin
-Enter your individual information
-:warning: Go to Postman's Individual [here]().
-
+<br>
 
 ## How to access the project
 :warning: Access the challenge repository [here](https://github.com/wave7-grupo3/desafio_integrador)
@@ -139,6 +160,7 @@ Open the terminal and type the information in the sequence:
 
 Translated with www.DeepL.com/Translator (free version)
 
+<br>
 
 ## Authors
 - GitHub - [Amanda Zotelli](https://github.com/amdzotelli)
@@ -146,20 +168,44 @@ Translated with www.DeepL.com/Translator (free version)
 - GitHub - [Gabriel Morais](https://github.com/gabrielmorais-meli)
 - GitHub - [Ingrid Paulino](https://github.com/IngridPaulino)
 - GitHub - [Mariana Saraiva](https://github.com/marianasaraivameli)
-- GitHub - [Rosália Padoin](https://github.com/rosalia-oliveira)
+- GitHub - [Rosalia Padoin](https://github.com/rosalia-oliveira)
 
 
-</br>
+<br>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Versão: Português-black?style=for-the-badge" alt="badge versão em português">
-</p>
+-------------
 
-## API desafio_integrador
+<br>
+
+# Portuguese Version
+
+<br>
+
+
+## Sumário
+
+- [Sobre a API](#sobre-a-api)
+- [Habilidades](#habilidades)
+- [O que foi desenvolvido](#o-que-foi-desenvolvido)
+- [Validações](#validações)
+- [Testes](#testes)
+- [Documentação da API](#documentação-da-api)
+- [Documentação Individual](#documentação-individual)
+- [Como acessar o projeto](#como-acessar-o-projeto)
+- [Autores](#autores)
+
+<br>
+
+-------------
+
+<br>
+
+## Sobre a API
 Desenvolvimento de uma API REST para um Marketplace que já vende produtos alimentícios, mas quer poder vender produtos que precisam de refrigeração; chamados produtos frescos. Implica novos desafios na forma de armazenar,
 transportar e comercializar os produtos, uma vez que é feito de uma forma totalmente diferente.
 
-A API foi desenvolvida para:
+<details>
+  <summary>A API foi desenvolvida para:</summary>
 
 - Ser capaz de inserir um lote de produtos no armazém de distribuição para registrar essa existência no estoque.
 
@@ -172,14 +218,18 @@ A API foi desenvolvida para:
 - Poder cadastrar o pedido de compra para que os colaboradores dentro do Fullfilment
 possam montar o (s) pedido (s) para despachá-los.
 
+</details>
 
+<br>
 
-### Habilidades
+## Habilidades
 
 Implementa uma API REST no âmbito do slogan e aplicar os conteúdos trabalhados durante o BOOTCAMP MELI (Git, Java, Spring, Testes, Banco de Dados,
 Qualidade e Segurança), que podem ser usados a partir de uma proposta, especificação de requisitos e documentação anexa.
 
-MSC
+<details>
+  <summary>Arquitetura MSC</summary>
+  
 - Estruturar a API conforme as boas práticas seguindo a arquitetura MSC e alguns princípios do SOLID:
     - Entities: Reponsável por modelar as entidades.
     - Repository: É a camada de comunicação com o banco de dados.
@@ -187,8 +237,12 @@ MSC
     - Controller: Responsável por receber as requisições e enviar as respostas.
     - Advisor: Responsável por gerenciar as exceções da aplicação.
     - DTO: Responsável pelo transporte de dados entre diferentes componentes de um sistema.
+    
+    </details>
 
-Tecnologias
+<details>
+  <summary>Tecnologias e Bibliotecas</summary>
+  
 - O desafio foi realizado utilizando Java 11 com Spring Boot, suas anotações de validação somando as dependências:
     - Spring Boot DevTools.
     - Spring Boot Web.
@@ -196,9 +250,12 @@ Tecnologias
     - Lombok.
     - JUnit.
     - Mockito.
+    
+    </details>
+    
+    <br>
 
-
-### O que foi desenvolvido 
+## O que foi desenvolvido 
 As rotas implementadas para contemplar estas questões foram:
 
 - As histórias do usuário são contadas do ponto de vista do **representante do armazém** com base em suas necessidades. Os serviços são expostos a partir do **armazém de fullfilment**. 
@@ -217,7 +274,9 @@ As rotas implementadas para contemplar estas questões foram:
 
 _As rotas utilizadas foram idealizadas para deixar a aplicação mais dinâmica e funcional para o público alvo._
 
-### Validações
+<br>
+
+## Validações
 
 Entre as anotações de __validação__ do Spring Boot, que foram utilizadas na camada `Entities` de cada entidade, estão:
 
@@ -232,45 +291,30 @@ Entre as anotações de __validação__ do Spring Boot, que foram utilizadas na 
 - __Email__, para determinar se o formato do e-mail é válido;
 
 
-### Testes
+<br>
+
+## Testes
 
 Os testes de unidades e de integração foram feitos utilizando o JUnit para as assertions e Mockito para fazer os Mocks.
 
 As camadas foram testadas, com cobertura de miníma de 80% de métodos e linhas, verificando a consistência dos métodos utilizados para o desenvolvimento do projeto.
 
+<br>
 
-
-### Documentação da API
+## Documentação da API
 A ferramenta escolhida para documentar a API foi o Postman e JavaDoc para o projeto.
 
 :warning: Acesse a documentação do Postman [aqui](https://documenter.getpostman.com/view/23627905/2s8YmUKzJM).
 
+<br>
+
+## Documentação Individual
+
 ### Requisito 6
-
-#### Amanda Zotelli[]
-Inserir as informações individuais
+#### Amanda Zotelli
 :warning: Acesse a Individual do Postman [aqui]().
 
-#### Carolina Hakamada
-Inserir as informações individuais
-:warning: Acesse a Individual do Postman [aqui]().
-
-#### Gabriel Morais
-Inserir as informações individuais
-:warning: Acesse a Individual do Postman [aqui]().
-
-#### Ingrid Paulino
-Inserir as informações individuais
-:warning: Acesse a Individual do Postman [aqui]().
-
-#### Mariana Saraiva
-Inserir as informações individuais
-:warning: Acesse a Individual do Postman [aqui]().
-
-#### Rosália Padoin
-Inserir as informações individuais
-:warning: Acesse a Individual do Postman [aqui]().
-
+<br>
 
 ## Como acessar o projeto
 :warning: Acessar o repositório do desafio [aqui](https://github.com/wave7-grupo3/desafio_integrador)
@@ -285,6 +329,7 @@ Abrir o terminal e digitar as informações na sequência:
     - Na barra superior da IDE IntelliJ, selecionar a aba `Tools`;
     - Em seguida, selecionar `generate JavaDoc`;
 
+<br>
 
 ## Autores
 - GitHub - [Amanda Zotelli](https://github.com/amdzotelli)
@@ -292,6 +337,6 @@ Abrir o terminal e digitar as informações na sequência:
 - GitHub - [Gabriel Morais](https://github.com/gabrielmorais-meli)
 - GitHub - [Ingrid Paulino](https://github.com/IngridPaulino)
 - GitHub - [Mariana Saraiva](https://github.com/marianasaraivameli)
-- GitHub - [Rosália Padoin](https://github.com/rosalia-oliveira)
+- GitHub - [Rosalia Padoin](https://github.com/rosalia-oliveira)
 
 
