@@ -162,7 +162,7 @@ The tool chosen to document the API was Postman and JavaDoc for the project.
 
 ◽ After cloning and running the project (according to the step-by-step below ⬇️), go to http://localhost:8080/swagger-ui.html#/ to view the Swagger documentation.
 
-◽ Go to Postman's Individual [here]().
+◽ Go to Postman's documentation with the routes from the Individual requirement [here](https://documenter.getpostman.com/view/24321182/2s8YsnWvkm).
 
 ◽ Reports and Graphs...
 
@@ -361,7 +361,7 @@ Integrador, sem que o problema a ser resolvido fosse especificado pelo Product O
 
 <br>
 
-:white_medium_small_square: Acesse a Documentação Individual do Postman [aqui]().
+:white_medium_small_square: Acesse a Documentação com as rotas do requisito Individual do Postman [aqui](https://documenter.getpostman.com/view/24321182/2s8YsnWvkm).
 
 <br>
 
